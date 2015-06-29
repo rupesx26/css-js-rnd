@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<meta charset="utf-8" />
+<title> Hover </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+<style type="text/css">
+	.listWrapper{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.listWrapper li{	
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	height: 220px;
+	padding: 0;
+
+}
+
+.listWrapper li .itemWrap{
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: relative;
+}
+.itemWrap .itemInner{
+	display: table-cell;
+	vertical-align: middle;
+	background-color: rgba(0,0,0,.1);
+}
+.itemIcon, .itemTitle{
+	margin: 5px 0;
+	font-size: 15px;
+}
+.itemFront{
+	display: block;
+}
+.itemBack{
+	position:absolute;
+	bottom:0%;
+	left:0;
+	width:100%;
+	height:0%;
+	color:#fff;
+	background-color: rgba(0,0,0,.5);
+}
+.itemDwrap{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.itemDetails{
+	display: table-cell;
+	vertical-align: middle;
+}
+.itemInner:hover .itemFront{
+	display: none;
+}
+
+/*Media Queries*/
+@media screen and (min-width: 991px){
+	.itemBack{
+		filter:alpa(opacity=0);
+		opacity: 1;
+		-webkit-transition:bottom .5s ease, opacity .5s ease-out 0s;
+		-moz-transition:bottom .5s ease, opacity .5s ease-out 0s;
+		-ms-transition:bottom .5s ease, opacity .5s ease-out 0s;
+		-o-transition:bottom .5s ease, opacity .5s ease-out 0s;
+		transition:bottom .5s ease, opacity .5s ease-out 0s;
+		-webkit-transition:bottom .5s ease, height .5s ease-out 0s;
+		-moz-transition:bottom .5s ease, height .5s ease-out 0s;
+		-ms-transition:bottom .5s ease, height .5s ease-out 0s;
+		-o-transition:bottom .5s ease, height .5s ease-out 0s;
+		transition:bottom .5s ease, height .5s ease-out 0s;
+	}
+
+	.itemInner:hover .itemBack{
+		bottom:0%;
+		opacity: 1;
+		height:100%;
+	}
+}
+
+
+@media screen and (min-width: 480px){
+	.listWrapper li:nth-child(3n+1){
+		border-left: 0;
+	}
+	.listWrapper li:nth-child(1), 
+	.listWrapper li:nth-child(2), 
+	.listWrapper li:nth-child(3){
+			border-top: 0;
+		}
+}
+
+@media screen and (max-width: 480px){
+
+
+	.listWrapper li{
+		border-left: 0;
+
+	}
+	.listWrapper li:nth-child(1){
+		border-top: 0;
+	}
+
+}
+</style>
+</head>
+<body>
+<!--Container-->
+	<div class="container">
+		<div class="row">
+			<ul class="listWrapper">
+				<li class="col-sm-4">
+					<div class="itemWrap">
+						<div class="itemInner">
+							<div class="itemFront">
+								<div class="itemIcon">$</div>
+								<div class="itemTitle">Title 1</div>
+							</div>
+							<div class="itemBack">
+								<div class="itemDwrap">
+									<div class="itemDetails">
+									/*!
+									 * Bootstrap v3.3.5 (http://getbootstrap.com)
+									 * Copyright 2011-2015 Twitter, Inc.
+									 * Licensed under the MIT license
+									 */
+									 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>	
+				<li class="col-sm-4">
+					<div class="itemWrap">
+						<div class="itemInner">
+							<div class="itemFront">
+								<div class="itemIcon">$</div>
+								<div class="itemTitle">Title 2</div>
+							</div>
+							<div class="itemBack">
+								<div class="itemDwrap">
+									<div class="itemDetails">
+									/*!
+									 * Bootstrap v3.3.5 (http://getbootstrap.com)
+									 * Copyright 2011-2015 Twitter, Inc.
+									 * Licensed under the MIT license
+									 */
+									 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="col-sm-4">
+					<div class="itemWrap">
+						<div class="itemInner">
+							<div class="itemFront">
+								<div class="itemIcon">$</div>
+								<div class="itemTitle">Title 3</div>
+							</div>
+							<div class="itemBack">
+								<div class="itemDwrap">
+									<div class="itemDetails">
+									/*!
+									 * Bootstrap v3.3.5 (http://getbootstrap.com)
+									 * Copyright 2011-2015 Twitter, Inc.
+									 * Licensed under the MIT license
+									 */
+									 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="col-sm-4">
+					<div class="itemWrap">
+						<div class="itemInner">
+							<div class="itemFront">
+								<div class="itemIcon">$</div>
+								<div class="itemTitle">Title 4</div>
+							</div>
+							<div class="itemBack">
+								<div class="itemDwrap">
+									<div class="itemDetails">
+									/*!
+									 * Bootstrap v3.3.5 (http://getbootstrap.com)
+									 * Copyright 2011-2015 Twitter, Inc.
+									 * Licensed under the MIT license
+									 */
+									 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="col-sm-4">
+					<div class="itemWrap">
+						<div class="itemInner">
+							<div class="itemFront">
+								<div class="itemIcon">$</div>
+								<div class="itemTitle">Title 5</div>
+							</div>
+							<div class="itemBack">
+								<div class="itemDwrap">
+									<div class="itemDetails">
+									/*!
+									 * Bootstrap v3.3.5 (http://getbootstrap.com)
+									 * Copyright 2011-2015 Twitter, Inc.
+									 * Licensed under the MIT license
+									 */
+									 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="col-sm-4">
+					<div class="itemWrap">
+						<div class="itemInner">
+							<div class="itemFront">
+								<div class="itemIcon">$</div>
+								<div class="itemTitle">Title 6</div>
+							</div>
+							<div class="itemBack">
+								<div class="itemDwrap">
+									<div class="itemDetails">
+									/*!
+									 * Bootstrap v3.3.5 (http://getbootstrap.com)
+									 * Copyright 2011-2015 Twitter, Inc.
+									 * Licensed under the MIT license
+									 */
+									 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+						
+			</ul>
+		</div>
+	</div>
+
+<!--Container-->
+<!--scripts-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		if ((screen.width <= 768)) {
+			$('.itemInner').click(function() {
+				var itemBack = $(this).find('.itemBack');
+				var itemFront = $(this).find('.itemFront');
+				$('.itemBack').not(itemBack).css('height', '0%');
+				$('.itemFront').not(itemFront).css('display', 'block');
+				 itemBack.css('height', '100%');
+				 itemFront.css('display', 'none');
+			});	
+		}	
+	});
+</script>
+</body>
+</html>
